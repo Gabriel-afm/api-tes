@@ -1,53 +1,56 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
   margin: 0;
   padding: 0;
 }
 
-.container {
-  max-width: 800px;
-  margin: 20px auto;
-  background: #fff;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-}
-
-h1, h2 {
-  color: #333;
-}
-
-form {
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  margin: 10px 0 5px;
-}
-
-input {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button {
-  display: block;
-  width: 100%;
+header {
+  background-color: #333;
+  color: white;
   padding: 10px;
-  background-color: #4CAF50;
-  color: #fff;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+#menuToggle {
+  font-size: 24px;
+  background: none;
   border: none;
-  border-radius: 4px;
+  color: white;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #45a049;
+#menuLinks {
+  display: none;
+  flex-direction: column;
+  background-color: #444;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  padding: 10px;
+}
+
+#menuLinks a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-container {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+}
+
+.table-container {
+  margin: 20px;
 }
 
 table {
@@ -55,11 +58,18 @@ table {
   border-collapse: collapse;
 }
 
-table, th, td {
-  border: 1px solid #ccc;
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
-th, td {
+th {
+  background-color: #f4f4f4;
+}
+
+footer {
+  text-align: center;
   padding: 10px;
-  text-align: left;
+  background-color: #333;
+  color: white;
 }
